@@ -1,0 +1,105 @@
+:root {
+    --clr-bg:hsl(208, 100%, 97%);
+    --clr-sentMessage-bg:hsl(88, 88%, 83%);
+    --clr-systemMessage-bg:hsl(250, 5%, 45%);
+    --clr-receivedMessage-bg:hsl(251, 67%, 80%);
+    --clr-messageFont:hsl(0, 100%, 0%);
+    --clr-btn-bg:hsl(90, 70%, 40%);
+    --clr-sendButton-font:hsl(0, 100%, 0%);
+
+    --border-1: solid 1px red;
+    --border-2: solid 1px green;
+    --border-3: solid 1px blue;
+}
+
+.title {
+    text-align: center;
+    /* border: var(--border-1); */
+}
+
+main {
+    background-color: var(--clr-bg);
+    max-width: 600px;
+    margin: 1.5em auto;
+    font-family: sans-serif;
+    /* position: absolute;
+        bottom:5px;
+        right: 5px; */
+}
+
+.system {
+    background-color: var(--clr-systemMessage-bg);
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--clr-bg);
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.received-container, .sent-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0 0.5em;
+}
+
+#received-container {
+   justify-content: flex-start;
+}
+
+#sent-container {
+    align-items: flex-end;
+}
+
+.message {
+    max-width: 70%;
+    padding: 0.5rem 0.5rem 0.5rem 1em;
+    margin: 0.2em 0 0.2em;
+}
+
+.received {
+    background-color: var(--clr-receivedMessage-bg);
+    border-radius: 0 1em 1em 0;
+    box-shadow: 1px 1.5px 5px 0px grey;
+}
+
+.sent {
+    background-color: var(--clr-sentMessage-bg);
+    border-radius: 1em 0 0 1em;
+    box-shadow: -1px 1.5px 5px 0px grey;
+}
+
+.writeMessage {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    padding: 1rem;
+}
+
+.textarea {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: inset 1px 1.5px 5px 0px grey;
+}
+
+.btn__send {
+    background-color: var(--clr-btn-bg);
+    width: 2rem;
+    aspect-ratio: 1;
+    margin-left: 0.5rem ;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px grey;
+    font-size: 0.8rem;
+    color: var(--clr-bg);
+}.btn__send:hover {
+    opacity: 0.7;
+} .btn__send:active {
+    opacity:0.5;
+}
