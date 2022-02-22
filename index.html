@@ -7,32 +7,17 @@
     <title>Chat app</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="#">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<!--
+<body>
     <main>
-        <div class="chatbox">
-            <p class="system">Te uniste al chat</p>
-            <div class="received-container">
-                <p class="received message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nemo consectetur culpa illum iusto nulla excepturi dolor eos illo rem.</p>
-            </div>
-            <div class="sent-container">
-                <p class="sent message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quaerat!</p>
-            </div>
-        </div>
-        <form class="writeMessage">
-            <input type="text" name="textarea" id="textarea" placeholder="Escribe algo aquí">
-            <button class="btn__send" type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        <div id="chatbox"></div>
+        <form id="send-container">
+            <input type="text" id="message-input" placeholder="Escribe un mensaje">
+            <button type="submit" id="send-button"><i class="fa-solid fa-paper-plane"></i></button>
         </form>
     </main>
--->
-<body>
-    <div id="message-container"></div>
-    <form id="send-container">
-        <input type="text" id="message-input">
-        <button type="submit" id="send-button"><i class="fa-solid fa-paper-plane"></i></button>
-    </form>
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script defer src="script.js"></script>
 </body>
